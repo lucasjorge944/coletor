@@ -7,7 +7,7 @@ function realizarColeta(){
 
 			},
 			success: function(data, textStatus, xhr) {
-				alert(data);
+				//alert(data);
 			},
 			error: function(xhr, textStatus, errorThrown) {
 			    //called when there is an error
@@ -15,4 +15,6 @@ function realizarColeta(){
 		});
 	});
 }
-//setInterval(function(){realizarColeta();}, 5000);
+setInterval(function(){realizarColeta();}, 5000);
+//15 em 15 minutos
+//setInterval(function(){realizarColeta();}, 900000);
